@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This functions (both, makeCacheMatrix and cacheSolve) store the cache information about the inverse matrix that could change along time.
 
-## Write a short comment describing this function
+## makeCacheMatrix funtion build an especial matrix that contain the inverse matrix of a given matrix (x)
 
 makeCacheMatrix <- function(x = matrix()) {
       inverse_m <- NULL
@@ -18,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve function take a special matrix an calculate the inverse matrix or add this value to a list to have 
+## all the information about inverse matrix to a given initial matrices
 
 cacheSolve <- function(x, ...) {
       inverse_m <- x$getinverse_m()
